@@ -1,5 +1,4 @@
 
-// TODO: change it to something else that makes sense
 export const addPokemon = (pokemon) => {
     return (dispatch) => {
         dispatch({
@@ -8,12 +7,12 @@ export const addPokemon = (pokemon) => {
         })
     }
 }
-// TODO: change it to something else that makes sense
-// export const withdrawMoney = (amount) => {
-//     return (dispatch) => {
-//         dispatch({
-//             type: "withdraw",
-//             payload: amount
-//         })
-//     }
-// }
+
+export const removePokemon = (pokemon) => {
+    return (dispatch) => {
+        dispatch({
+            type: "remove",
+            payload: pokemon
+        })
+    }
+}
