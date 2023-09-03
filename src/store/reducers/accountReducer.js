@@ -1,13 +1,13 @@
 // TODO: change to reflect the action-creators file
 // state initialized as 0
 // action is of type { "type":"deposit|withdraw", "payload":"positive|0|negative" }
-const accountReducer = (state = 0, action) => {
+const accountReducer = (state = { }, action) => {
     try {
         switch (action.type) {
-            case "deposit":
+            case "add":
                 return state + action.payload;
-            case "withdraw":
-                return state - action.payload;
+            // case "withdraw":
+            //     return state - action.payload;
             default:
                 return state;
         }
